@@ -3,8 +3,8 @@
  */
 package video9;
 
-import video7.Node;
-import video7.Edge;
+import Graph.Node;
+import Graph.Edge;
 import java.util.HashMap;
 
 public class DijkstraWithHeap {

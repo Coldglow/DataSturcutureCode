@@ -22,7 +22,7 @@ public class SortArrayDistanceLessK {
     }
 
     // 因为这道题是添加一个数，弹出一个数的形式，所以可以使用内置的堆结构
-    // 但如果是修改已经构建好的堆的结构当中的值，并且希望修改后仍然是个堆结构，那么就不能用内置的对结构了
+    // 但如果是修改已经构建好的堆的结构当中的值，并且希望修改后仍然是个堆结构，那么就不能用内置的堆结构了
     // 需要自己写heapify方法
     public static void sortArrayDistanceLessK(int[] arr, int k) {
         int index = 0;
@@ -30,7 +30,7 @@ public class SortArrayDistanceLessK {
         PriorityQueue<Integer> heap = new PriorityQueue<>();
 
         // 如果需要构建大根堆，则需要加入比较器
-        PriorityQueue<Integer> heap_acomp = new PriorityQueue<>(new AComp());
+//        PriorityQueue<Integer> heap_acomp = new PriorityQueue<>(new AComp());
 
         // 确保k小于数组长度
         for(; index <= k; index++) {
